@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 
 namespace CuHackingMurder
 {
-    
+
     /// <summary>
     /// Interaction logic for PopUp.xaml
     /// </summary>
@@ -25,7 +25,7 @@ namespace CuHackingMurder
         {
             InitializeComponent();
             Action.Text = (sender as Button).Tag.ToString();
-            
+
             Parser p = new Parser();
             List<Device> devices = p.getDevices();
             string device_id = (sender as Button).Tag.ToString();
@@ -33,7 +33,7 @@ namespace CuHackingMurder
 
             if ((sender as Button).Name.Equals("Phone"))
             {
-                foreach(Device div in devices)
+                foreach (Device div in devices)
                 {
                     if (div is Phone && div.getDeviceID() == device_id)
                     {
@@ -45,7 +45,7 @@ namespace CuHackingMurder
             {
                 foreach (Device div in devices)
                 {
-                    if(!(div is Phone) && div.getDeviceID() == device_id)
+                    if (!(div is Phone) && div.getDeviceID() == device_id)
                     {
                         d = div;
                     }
@@ -60,26 +60,47 @@ namespace CuHackingMurder
                 string person = "";
                 foreach (Event e in events)
                 {
-                    action += e.getEventName() + "\n";
-                    time += e.getEventTime() + "\n";
-                    person += e.getGuestID().getName() + "\n";
+                    Console.WriteLine((sender as Button).Name.ToString());
+                    if ((sender as Button).Name.ToString().Contains("room"))
+                    {
+                        if (!e.getEventName().Contains("hook"))
+                        {
+                            action += e.getEventName() + "\n";
+                            time += e.getEventTime() + "\n";
+                            person += e.getGuestID().getName() + "\n";
+                        }
+                    }
+                    if ((sender as Button).Name.ToString().Contains("phone"))
+                    {
+                        if (e.getEventName().Contains("hook"))
+                        {
+                            action += e.getEventName() + "\n";
+                            time += e.getEventTime() + "\n";
+                            person += e.getGuestID().getName() + "\n";
+                        }
+                    }
+                    if ((sender as Button).Name.ToString().Contains("wifi")|| (sender as Button).Name.ToString().Contains("sensor"))
+                    {
+                            action += e.getEventName() + "\n";
+                            time += e.getEventTime() + "\n";
+                            person += e.getGuestID().getName() + "\n";
+                        
+                    }
+                    
                 }
                 Action.Text = action;
                 Time.Text = time;
                 Person.Text = person;
-            } catch
+            }
+            catch
             {
                 Action.Text = "";
                 Time.Text = "";
                 Person.Text = "";
                 Console.WriteLine("Null Pointer Exception");
             }
-            
-        }
-
-        private void ChoosePerson_Click(object sender, RoutedEventArgs e)
-        {
 
         }
+
     }
 }

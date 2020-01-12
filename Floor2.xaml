@@ -190,92 +190,92 @@
 
         <!--#region Access Point Buttons-->
 
-        <Button Tag="ap2-1" Grid.Column="27" Grid.Row="38" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="ap2-2" Grid.Column="63" Grid.Row="38" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="ap2-3" Grid.Column="49" Grid.Row="38" Grid.ColumnSpan="4" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="ap2-1" x:Name="wifi5" Grid.Column="27" Grid.Row="38" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="ap2-2" x:Name="wifi6" Grid.Column="63" Grid.Row="38" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="ap2-3" x:Name="wifi7" Grid.Column="49" Grid.Row="38" Grid.ColumnSpan="4" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
 
         <!-- #endregion -->
 
         <!--#region Door Buttons-->
-        <Button Tag="210"   Grid.Column="16" Grid.Row="15" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="231" Grid.Column="26" Grid.Row="17" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="233" Grid.Column="36" Grid.Row="17" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="235" Grid.Column="47" Grid.Row="17" Grid.ColumnSpan="6" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="241" Grid.Column="57" Grid.Row="20" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="247" Grid.Column="67" Grid.Row="20" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="220" Grid.Column="16" Grid.Row="53" Grid.ColumnSpan="7" Grid.RowSpan="4" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="232" Grid.Column="26" Grid.Row="59" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="236" Grid.Column="48" Grid.Row="59" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="244" Grid.Column="58" Grid.Row="56" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="248" Grid.Column="68" Grid.Row="56" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
-        <Button Tag="250" Grid.Column="78" Grid.Row="34" Grid.ColumnSpan="2" Grid.RowSpan="12" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="210" x:Name="room_210"  Grid.Column="16" Grid.Row="15" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="231" x:Name="room_231" Grid.Column="26" Grid.Row="17" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="233" x:Name="room_233" Grid.Column="36" Grid.Row="17" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="235" x:Name="room_235" Grid.Column="47" Grid.Row="17" Grid.ColumnSpan="6" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="241" x:Name="room_241" Grid.Column="57" Grid.Row="20" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="247" x:Name="room_247" Grid.Column="67" Grid.Row="20" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="220" x:Name="room_220" Grid.Column="16" Grid.Row="53" Grid.ColumnSpan="7" Grid.RowSpan="4" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="232" x:Name="room_232" Grid.Column="26" Grid.Row="59" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="236" x:Name="room_236" Grid.Column="48" Grid.Row="59" Grid.ColumnSpan="7" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="244" x:Name="room_244" Grid.Column="58" Grid.Row="56" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="248" x:Name="room_248" Grid.Column="68" Grid.Row="56" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button Tag="250" x:Name="room_2150" Grid.Column="78" Grid.Row="34" Grid.ColumnSpan="2" Grid.RowSpan="12" Background="Transparent" Click="Device_Click"/>
 
         <!-- #endregion -->
 
         <!--#region Phone Buttons-->
 
 
-        <Button Tag="231" Name = "Phone1"  Grid.Column="25" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
+        <Button Tag="231" x:Name="phone_231"   Grid.Column="25" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="233" Name = "Phone2"  Grid.Column="35" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
+        <Button Tag="233" x:Name="phone_233"   Grid.Column="35" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="235" Name = "Phone3"  Grid.Column="46" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
+        <Button Tag="235" x:Name="phone_235"  Grid.Column="46" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="241" Name = "Phone4"  Grid.Column="56" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
+        <Button Tag="241" x:Name="phone_241"   Grid.Column="56" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Device_Click" >
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="247" Name = "Phone5"  Grid.Column="66" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="247" x:Name="phone_247"  Grid.Column="66" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="210" Name = "Phone6"  Grid.Column="16" Grid.Row="10" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="210" x:Name="phone_210"   Grid.Column="16" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="220" Name = "Phone7"  Grid.Column="16" Grid.Row="45" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="220" x:Name="phone_220"   Grid.Column="16" Grid.Row="45" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="232" Name = "Phone8"  Grid.Column="26" Grid.Row="55" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="232" x:Name="phone_232"  Grid.Column="26" Grid.Row="55" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="236" Name = "Phone9"  Grid.Column="47" Grid.Row="55" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="236" x:Name="phone_236"   Grid.Column="47" Grid.Row="55" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="244" Name = "Phone10"  Grid.Column="57" Grid.Row="50" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="244" x:Name="phone_224"   Grid.Column="57" Grid.Row="50" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
         </Button>
 
-        <Button Tag="248" Name = "Phone11"  Grid.Column="67" Grid.Row="50" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
+        <Button Tag="248" x:Name="phone_248"  Grid.Column="67" Grid.Row="50" Grid.ColumnSpan="2" Grid.RowSpan="3"  Click="Device_Click">
             <Button.Background>
                 <ImageBrush ImageSource ="phone.png"  />
             </Button.Background>
@@ -284,12 +284,12 @@
         <!--#endregion-->
 
         <!--#region  Motion Sensors-->
-        <Button  Tag="elevator" Grid.Column="36" Grid.Row="33" Grid.ColumnSpan="8" Grid.RowSpan="3" Background="Transparent" Click="Device_Click"/>
-        <Button  Tag="ice_machine" Grid.Column="36" Grid.Row="52" Grid.ColumnSpan="9" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
+        <Button  Tag="elevator" x:Name="sensor2" Grid.Column="36" Grid.Row="33" Grid.ColumnSpan="8" Grid.RowSpan="3" Background="Transparent" Click="Device_Click"/>
+        <Button  Tag="ice_machine" x:Name="sensor3" Grid.Column="36" Grid.Row="52" Grid.ColumnSpan="9" Grid.RowSpan="5" Background="Transparent" Click="Device_Click"/>
         <!-- #endregion -->
 
     </Grid>
 
 
-
+    
 </Page>
