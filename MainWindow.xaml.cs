@@ -46,5 +46,14 @@ namespace CuHackingMurder
             ChoosePerson choosePerson = new ChoosePerson();
             choosePerson.Show();
         }
+
+        private void Predict_Killer_Click(object sender, RoutedEventArgs e)
+        {
+
+            string dude = new SuspectFinder().predictMurderer();
+
+            Suspect suspect = new Suspect(dude);
+            suspect.ShowDialog();
+        }
     }
 }

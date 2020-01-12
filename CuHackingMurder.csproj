@@ -68,6 +68,10 @@
       <DependentUpon>Search.xaml</DependentUpon>
     </Compile>
     <Compile Include="Staff.cs" />
+    <Compile Include="Suspect.xaml.cs">
+      <DependentUpon>Suspect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuspectFinder.cs" />
     <Page Include="ChoosePerson.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Suspect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="floor_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sherlock.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

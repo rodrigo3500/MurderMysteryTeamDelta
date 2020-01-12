@@ -19,11 +19,13 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Button x:Name="Exit" Content="Exit"  FontSize ="35"  Grid.Row="0" Click="Exit_Click" Background="Red"/>
             <Button x:Name="Floor1" Content="Floor 1"  FontSize ="35" Grid.Row="1" Click="Floor_1_Click" />
             <Button x:Name="Floor2" Content="Floor 2"  FontSize ="35" Grid.Row="2" Click="Floor_2_Click" />
             <Button x:Name="Choose_Person" Content="Search"  FontSize ="35" Grid.Row="3" Click="Choose_Person_Click" Background="LawnGreen"/>
+            <Button x:Name="Predict_Killer" Content="Whodunnit?" FontSize="25" Grid.Row="4" Click="Predict_Killer_Click" Background="CadetBlue"/>
         </Grid>
         <!-- #region Buttons Region-->
 
