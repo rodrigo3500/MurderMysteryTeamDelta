@@ -1,0 +1,35 @@
+﻿<Window x:Class="CuHackingMurder.ChoosePerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuHackingMurder"
+        mc:Ignorable="d"
+        ToolBarTray.IsLocked ="True"
+        Title="" Height="300" Width="300" ResizeMode="NoResize" WindowStyle ="SingleBorderWindow" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Tag="Veronica" Content="Veronica" Grid.Row="0" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Dave" Content="Dave" Grid.Row="1" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Jason" Content="Jason" Grid.Row="2" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Rob" Content="Rob" Grid.Row="3" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Marc-Andre" Content="Marc-Andre" Grid.Row="4" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Salina" Content="Salina" Grid.Row="5" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Thomas" Content="Thomas" Grid.Row="6" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Kristina" Content="Kristina" Grid.Row="7" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+        <Button Tag="Harrison" Content="Harrison" Grid.Row="8" FontSize="19" Background="LightSkyBlue" Click="Button_Click"/>
+       
+    </Grid>
+
+</Window>

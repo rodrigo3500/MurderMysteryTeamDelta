@@ -1,0 +1,36 @@
+﻿<Window x:Class="CuHackingMurder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuHackingMurder"
+        mc:Ignorable="d"
+        Title="Floor1" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize" >
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Exit" Content="Exit"  FontSize ="35"  Grid.Row="0" Click="Exit_Click" Background="Red"/>
+            <Button x:Name="Floor1" Content="Floor 1"  FontSize ="35" Grid.Row="1" Click="Floor_1_Click" />
+            <Button x:Name="Floor2" Content="Floor 2"  FontSize ="35" Grid.Row="2" Click="Floor_2_Click" />
+            <Button x:Name="Choose_Person" Content="Search"  FontSize ="35" Grid.Row="3" Click="Choose_Person_Click" Background="LawnGreen"/>
+        </Grid>
+        <!-- #region Buttons Region-->
+
+        <!--#endregion-->
+
+        <Frame  x:Name="Main" NavigationUIVisibility="Hidden" />
+        
+
+    </Grid>
+</Window>
