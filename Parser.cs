@@ -20,7 +20,10 @@ namespace CuHackingMurder
 
         public void LoadJson()
         {
-            String fileName = ("C:\\Users\\rodri\\source\\repos\\CuHackingMurder\\Murder-on-the-2nd-Floor-Raw-Data.json");
+            int length = System.IO.Directory.GetCurrentDirectory().Length;
+          //  String fileName = ("C:\\Users\\Evan Pelletier\\Desktop\\CUHACKING2020\\Murder-on-the-2nd-Floor-Raw-Data.json");
+            String fileName = System.IO.Directory.GetCurrentDirectory().Substring(0,length-10)+ "\\Murder-on-the-2nd-Floor-Raw-Data.json";
+            
             String fson = File.ReadAllText(fileName);
             var values = JsonConvert.DeserializeObject<Dictionary<string, object>>(fson);
             List<Action> actions = new List<Action>();
